@@ -1,0 +1,55 @@
+@use 'variables' as *;
+
+// breakpoints
+$bp-two-col: 350px;
+$bp-four-col: 500px;
+
+// grid width
+$grid-width: 85%;
+$grid-width-decimal: 0.85;
+
+// breakpoint mixins
+@mixin bp-two-col {
+    @media (min-width: $bp-two-col) {
+        grid-template-columns: calc( $grid-width-decimal * ($bp-four-col / 2)) minmax( calc($bp-two-col - $grid-width-decimal * ($bp-four-col / 2)), calc($grid-width-decimal * ($bp-four-col / 2)));
+        grid-template-rows: repeat(8, 1fr);
+    }
+}
+
+@mixin bp-four-col {
+    @media (min-width: $bp-four-col) {
+        padding: 3rem 0;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+footer {
+    background-color: $footer-bgc;
+    border-top: 1px solid grey;
+}
+
+.footerContainer {
+    width: $grid-width;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(16, 1fr);
+    grid-auto-flow: column;
+    line-height: 1.5rem;
+    @include bp-two-col;
+    @include bp-four-col;
+
+    a {
+        text-decoration: none;
+        color: grey;
+        font-weight: 600;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
