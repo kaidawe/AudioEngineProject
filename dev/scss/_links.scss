@@ -1,0 +1,44 @@
+@use "variables" as *;
+
+.SocialLinks {
+    width: 85%;
+    margin: 0 auto;
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $orange;
+    }
+    i {
+        margin-right: 5px;
+    }
+    .EmailAndLinkContainer {
+        display: flex;
+        justify-content: space-between;
+
+        .SocialLinksContainer {
+            
+            i::before {
+                align-content: center;
+                text-align: center;
+                display: inline-block;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background-color: black;
+                z-index: 0;
+            }
+            i {
+                position: relative;
+                color: white;
+                z-index: 1;
+            }
+        }
+
+        .EmailContainer {
+            a {
+                color: $grey;
+            }
+        }
+    }
+}

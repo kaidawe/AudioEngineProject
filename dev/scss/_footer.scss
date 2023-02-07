@@ -29,7 +29,7 @@ footer {
     border-top: 1px solid grey;
 }
 
-.footerContainer {
+.FooterContainer {
     width: $grid-width;
     margin: 0 auto;
     padding: 2rem 0;
@@ -43,7 +43,7 @@ footer {
 
     a {
         text-decoration: none;
-        color: grey;
+        color: $grey;
         font-weight: 600;
     }
     a:hover {
