@@ -1,0 +1,90 @@
+@use 'variables' as *;
+@use 'resets';
+
+.OurStorySection {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/bg-our-story-section-phone-square.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  padding-top: 0;
+
+  .OurStoryDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-family: var($font);
+      font-weight: 600;
+      font-size: 30px;
+      color: white;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+
+      @media (min-width: 400px) {
+        font-size: 40px;
+      }
+
+      @media (min-width: 520px) {
+        font-size: 45px;
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
+
+      @media (min-width: 780px) {
+        font-size: 50px;
+      }
+    }
+
+    p {
+      font-family: var($font);
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      max-width: 600px;
+      margin: 0;
+      line-height: 1.5;
+
+      @media (min-width: 520px) {
+        font-size: 16px;
+      }
+
+      @media (min-width: 780px) {
+        font-size: 19px;
+      }
+    }
+    //comment
+
+    #italics {
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    button {
+      font-family: $font;
+      background-color: $orange;
+      color: white;
+      text-transform: uppercase;
+      padding: 8px;
+      font-size: 14px;
+      padding-left: 18px;
+      padding-right: 18px;
+      border: none;
+      border-radius: 4px;
+    }
+  }
+
+  @media (min-width: 520px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../images/bg-our-story-section-tablet.jpg');
+    padding: 50px;
+  }
+
+  @media (min-width: 780px) {
+    background-image: url('../images/bg-our-story-section.jpg');
+    padding-bottom: 100px;
+  }
+}

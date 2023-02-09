@@ -35,14 +35,18 @@
     z-index: 999;
     right: 2%;
   }
-}
 
-.BannerShadebox {
-  @media (max-width: 680px) {
-    display: none !important;
-  }
-  @media (min-width: 680px) {
-    display: flex;
+  .BannerShadebox {
+    .BannerBtn {
+      background-color: $orange;
+      color: white;
+    }
+    @media (max-width: 680px) {
+      display: none !important;
+    }
+    @media (min-width: 680px) {
+      display: flex;
+    }
   }
 }
 
