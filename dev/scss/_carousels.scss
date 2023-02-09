@@ -2,28 +2,54 @@
 
 // Arrow Styling for all Carousels
 
-.slick-prev,
-.slick-next {
+.prev-arrow,
+.next-arrow {
   &:before {
     color: $orange;
+    font-size: 2em;
   }
-}
-
-.slick-prev:before {
-  font-family: 'FontAwesome';
-  content: 'f104';
+  &:hover:before {
+    cursor: pointer;
+  }
 }
 
 // Banner
 
 .BannerSection {
+  @extend %banner;
   color: $grey;
-  .BannerText {
-    display: none;
-    @media (min-width: 680px) {
-      display: block;
-      background-color: rgba(255, 255, 255, 0.3);
-    }
+}
+
+.BannerShadebox {
+  @media (max-width: 680px) {
+    display: none !important;
+  }
+  @media (min-width: 680px) {
+    display: flex;
+  }
+}
+
+@mixin banner-background($image) {
+  background-image: url('../images/#{$image}.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+// map of devices and associated images
+$banner-images: (
+  'banner-01-speaker-black',
+  'banner-02-bluetooth-receiver',
+  'banner-03-speaker-brown',
+  'banner-04-speaker-brown',
+  'banner-05-speaker-red',
+  'banner-06-speaker-black',
+  'banner-07-speaker-white'
+);
+
+// assign image using mix-in to background of each device by its class name
+@each $image in $banner-images {
+  .#{$image} {
+    @include banner-background($image);
   }
 }
 
