@@ -1,0 +1,105 @@
+@use 'variables' as *;
+
+// Arrow Styling for all Carousels
+
+.slick-prev,
+.slick-next {
+  &:before {
+    color: $orange;
+  }
+}
+
+// Banner
+
+.BannerSection {
+  color: $grey;
+  .BannerText {
+    display: none;
+    @media (min-width: 680px) {
+      display: block;
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+// End of Banner
+
+// Shop by Room or Device
+
+.room-inner-carousel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media (min-width: 450px) {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.room-item-wrapper {
+  padding: 1em;
+}
+
+.ShopByRoomItem {
+  background-color: $grey; // color in case image is missing or slow to load
+  width: 100%;
+  min-width: 142px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  color: white;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+// Background Image Mixin for Shop By Room Items
+@mixin sbr-background($image) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url($image);
+}
+
+// map of devices and associated images
+$room-devices: (
+  'sonos': '../images/shop-slider-01-speaker-white.jpg',
+  'siri': '../images/shop-slider-02-speaker-brown.jpg',
+  'turntable': '../images/shop-slider-03-speakers-brown.jpg',
+  'tv': '../images/shop-slider-04-speakers-brown.jpg',
+  'kitchen': '../images/shop-slider-05-speakers-brown.jpg',
+  'patio': '../images/shop-slider-06-speaker-brown.jpg',
+  'office': '../images/shop-slider-07-speakers-white.jpg',
+  'bedroom': '../images/shop-slider-08-speakers-white.jpg',
+);
+
+// assign image using mix-in to background of each device by its class name
+@each $name, $image in $room-devices {
+  .#{$name} {
+    @include sbr-background($image);
+  }
+}
+
+// End of Shop by Room or Device
+
+// In the News
+
+.InTheNewsSection {
+  text-align: center;
+  .carousel-wrapper {
+    @media (min-width: 500px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.InTheNewsItems a {
+  display: block;
+  margin: 4em 2em;
+  &:first-child {
+    margin-top: 3em;
+  }
+}
+
+// End of In The News
