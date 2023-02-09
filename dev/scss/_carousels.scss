@@ -18,6 +18,23 @@
 .BannerSection {
   @extend %banner;
   color: $grey;
+  position: relative;
+
+  .slick-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    z-index: 999;
+    left: 2%;
+  }
+
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    z-index: 999;
+    right: 2%;
+  }
 }
 
 .BannerShadebox {
