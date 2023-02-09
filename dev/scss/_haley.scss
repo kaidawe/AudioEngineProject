@@ -1,296 +1,294 @@
-
-@use "variables" as *;
-@use "resets";
+@use 'variables' as *;
+@use 'resets';
 
 .FeaturedProductsSection {
-    display: flex;
-    flex-direction: column;
-    
-    div .backgroundShade{
-        margin: 0;
-        padding: 0;
-    }
+  display: flex;
+  flex-direction: column;
 
-    .allNew{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-all-new-section-phone-square.jpg");
-        background-size: cover;
-        background-position: center;
-    }
+  div .backgroundShade {
+    margin: 0;
+    padding: 0;
+  }
 
-    .feelingLucky{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-feeling-lucky-section-phone-square.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-  
-    div {
-        min-height: 40vh;
-        padding-left: 25px;
-        line-height: 20px;
-
-      .FeaturedProductsTxt {
-        font-weight: 500;
-        text-transform: uppercase;
-        bottom: 20px;
-        left: 20px;
-        color: white;
-        margin-bottom: 0;
-      }
-
-      .FeaturedProductsSubTxt {
-        margin-top: 4px;
-        margin-bottom: 13px;
-        bottom: 10px;
-        left: 20px;
-        color: white;
-        font-weight: 300;
-      }
-
-      .FeaturedProductsBtn {
-        font-family: $font;
-        background-color: white;
-        color: black;
-        text-transform: uppercase;
-        padding: 8px;
-        font-size: 16px;
-        padding-left: 20px;
-        padding-right: 20px;
-        border: none;
-        border-radius: 4px;
-        font-weight: 400;
-      }
-    }
-  
-    @media (min-width: 500px) {
-        .allNew{
-            background-image: url("../images/bg-all-new-section.jpg");
-            min-height: 600px;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-        .feelingLucky{
-            background-image: url("../images/bg-feeling-lucky-section.jpg");
-            min-height: 600px;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-
-        .backgroundShade {
-            background-color: rgba(0, 0, 0, 0.5);
-            position: absolute;
-            right: 0;
-            width: 53%;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            transform: translateY(-25%);
-          }
-
-        .FeaturedProductsTxt{
-            padding-left: 30px;
-            font-size: 31px;
-            margin-top: 0;
-        }
-        .FeaturedProductsSubTxt{
-          padding-left: 30px;
-          font-size: 23px;
-          padding-top: 5px;
-          padding-bottom: 15px;
-        }
-
-        div {
-            min-height: 27vh;
-
-            .FeaturedProductsBtn {
-              padding-left: 30px;
-              padding-right: 30px;
-              margin-left: 30px;
-              padding: 15px;
-              font-size: 17px;
-          }
-        }
-      }
-
-      @media (min-width: 800px) {
-        .allNew{
-            background-image: url("../images/bg-all-new-section.jpg");
-            min-height: 620px;
-            display: flex;
-            align-items: center;
-        }
-        .feelingLucky{
-            background-image: url("../images/bg-feeling-lucky-section.jpg");
-            min-height: 620px;
-            display: flex;
-            align-items: center;
-        }
-
-        .backgroundShade {
-            background-color: rgba(0, 0, 0, 0.5);
-            position: absolute;
-            right: 0;
-            width: 47%;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-          }
-
-        .FeaturedProductsTxt{
-            padding-left: 30px;
-            font-size: 42px;
-            margin-top: 0;
-        }
-        .FeaturedProductsSubTxt{
-          padding-left: 30px;
-          font-size: 25px;
-          padding-top: 15px;
-          padding-bottom: 15px;
-        }
-
-        div {
-            min-height: 200px;
-
-            .FeaturedProductsBtn {
-              padding: 14px;
-              padding-left: 25px;
-              padding-right: 25px;
-              margin-left: 30px;
-              font-size: 18px;
-          }
-        }
-      }
-
-      @media (min-width: 1000px) {
-        .allNew{
-            background-image: url("../images/bg-all-new-section.jpg");
-            display: flex;
-            align-items: center;
-        }
-        .feelingLucky{
-            background-image: url("../images/bg-feeling-lucky-section.jpg");
-            display: flex;
-            align-items: center;
-        }
-
-        .backgroundShade {
-            background-color: rgba(0, 0, 0, 0.5);
-            position: absolute;
-            right: 0;
-            width: 35%;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-          }
-
-        .FeaturedProductsTxt{
-            padding-left: 30px;
-            font-size: 45px;
-            margin-top: 0;
-        }
-        .FeaturedProductsSubTxt{
-          padding-left: 30px;
-          font-size: 25px;
-          padding-top: 15px;
-          padding-bottom: 15px;
-        }
-
-      }
-}
-
-
-
-
-  .OurStorySection {
-    position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-our-story-section-phone-square.jpg");
+  .allNew {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../images/bg-all-new-section-phone-square.jpg');
     background-size: cover;
     background-position: center;
-    padding: 30px;
-    padding-top: 0;
+  }
 
-    .OurStoryDiv {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  
-      h2 {
-        font-family: var($font);
-        font-weight: 600;
-        font-size: 30px;
-        color: white;
-        margin-bottom: 5px;
-        text-transform: uppercase;
+  .feelingLucky {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../images/bg-feeling-lucky-section-phone-square.jpg');
+    background-size: cover;
+    background-position: center;
+  }
 
-        @media (min-width: 400px) {
-            font-size: 40px;
-          }
+  div {
+    min-height: 40vh;
+    padding-left: 25px;
+    line-height: 20px;
 
-        @media (min-width: 520px) {
-          font-size: 45px;
-          margin-bottom: 15px;
-          margin-top: 0;
-        }
-
-        @media (min-width: 780px) {
-            font-size: 50px;
-          }
-      }
-
-      p {
-        font-family: var($font);
-        color: white;
-        text-align: center;
-        font-size: 14px;
-        max-width: 600px;
-        margin: 0;
-        line-height: 1.5;
-
-        @media (min-width: 520px) {
-            font-size: 16px;
-          }
-
-        @media (min-width: 780px) {
-            font-size: 19px;
-          }
-
-      }
-      //comment
-
-      #italics {
-        font-style: italic;
-        margin-bottom: 20px;
-      }
-
-      button {
-        font-family: $font;
-        background-color: $orange;
-        color: white;
-        text-transform: uppercase;
-        padding: 8px;
-        font-size: 14px;
-        padding-left: 18px;
-        padding-right: 18px;
-        border: none;
-        border-radius: 4px;
-      }
+    .FeaturedProductsTxt {
+      font-weight: 500;
+      text-transform: uppercase;
+      bottom: 20px;
+      left: 20px;
+      color: white;
+      margin-bottom: 0;
     }
 
-    @media (min-width: 520px) {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-our-story-section-tablet.jpg");
-          padding: 50px;
-      }
-  
-    @media (min-width: 780px) {
-        background-image: url("../images/bg-our-story-section.jpg");
-        padding-bottom: 100px;
+    .FeaturedProductsSubTxt {
+      margin-top: 4px;
+      margin-bottom: 13px;
+      bottom: 10px;
+      left: 20px;
+      color: white;
+      font-weight: 300;
+    }
+
+    .FeaturedProductsBtn {
+      font-family: $font;
+      background-color: white;
+      color: black;
+      text-transform: uppercase;
+      padding: 8px;
+      font-size: 16px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: none;
+      border-radius: 4px;
+      font-weight: 400;
     }
   }
+
+  @media (min-width: 500px) {
+    .allNew {
+      background-image: url('../images/bg-all-new-section.jpg');
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    .feelingLucky {
+      background-image: url('../images/bg-feeling-lucky-section.jpg');
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .backgroundShade {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      right: 0;
+      width: 53%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      transform: translateY(-25%);
+    }
+
+    .FeaturedProductsTxt {
+      padding-left: 30px;
+      font-size: 31px;
+      margin-top: 0;
+    }
+    .FeaturedProductsSubTxt {
+      padding-left: 30px;
+      font-size: 23px;
+      padding-top: 5px;
+      padding-bottom: 15px;
+    }
+
+    div {
+      min-height: 27vh;
+
+      .FeaturedProductsBtn {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 30px;
+        padding: 15px;
+        font-size: 17px;
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .allNew {
+      background-image: url('../images/bg-all-new-section.jpg');
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+    }
+    .feelingLucky {
+      background-image: url('../images/bg-feeling-lucky-section.jpg');
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+    }
+
+    .backgroundShade {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      right: 0;
+      width: 47%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .FeaturedProductsTxt {
+      padding-left: 30px;
+      font-size: 42px;
+      margin-top: 0;
+    }
+    .FeaturedProductsSubTxt {
+      padding-left: 30px;
+      font-size: 25px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    div {
+      min-height: 200px;
+
+      .FeaturedProductsBtn {
+        padding: 14px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-left: 30px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .allNew {
+      background-image: url('../images/bg-all-new-section.jpg');
+      display: flex;
+      align-items: center;
+    }
+    .feelingLucky {
+      background-image: url('../images/bg-feeling-lucky-section.jpg');
+      display: flex;
+      align-items: center;
+    }
+
+    .backgroundShade {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      right: 0;
+      width: 35%;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .FeaturedProductsTxt {
+      padding-left: 30px;
+      font-size: 45px;
+      margin-top: 0;
+    }
+    .FeaturedProductsSubTxt {
+      padding-left: 30px;
+      font-size: 25px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.OurStorySection {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/bg-our-story-section-phone-square.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  padding-top: 0;
+
+  .OurStoryDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-family: var($font);
+      font-weight: 600;
+      font-size: 30px;
+      color: white;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+
+      @media (min-width: 400px) {
+        font-size: 40px;
+      }
+
+      @media (min-width: 520px) {
+        font-size: 45px;
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
+
+      @media (min-width: 780px) {
+        font-size: 50px;
+      }
+    }
+
+    p {
+      font-family: var($font);
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      max-width: 600px;
+      margin: 0;
+      line-height: 1.5;
+
+      @media (min-width: 520px) {
+        font-size: 16px;
+      }
+
+      @media (min-width: 780px) {
+        font-size: 19px;
+      }
+    }
+    //comment
+
+    #italics {
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    button {
+      font-family: $font;
+      background-color: $orange;
+      color: white;
+      text-transform: uppercase;
+      padding: 8px;
+      font-size: 14px;
+      padding-left: 18px;
+      padding-right: 18px;
+      border: none;
+      border-radius: 4px;
+    }
+  }
+
+  @media (min-width: 520px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../images/bg-our-story-section-tablet.jpg');
+    padding: 50px;
+  }
+
+  @media (min-width: 780px) {
+    background-image: url('../images/bg-our-story-section.jpg');
+    padding-bottom: 100px;
+  }
+}
