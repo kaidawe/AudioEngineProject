@@ -172,28 +172,27 @@
 		</section>
 
 		<section class="FeaturedProductsSection">
-			<div>
-				<img>image</image>
-				<div>
-					<h2 class="FeaturedProductsTxt">Product Text</h2>
-					<h3 class="FeaturedProductsSubTxt">Sub text here</h3>
+				<div class="allNew">
+				<div class="backgroundShade">
+					<h2 class="FeaturedProductsTxt">All New</h2>
+					<p class="FeaturedProductsSubTxt">The A5+ Wireless Speakers</p>
 					<button class="FeaturedProductsBtn">Learn More</button>
 				</div>
-			</div>
-			<div>
-				<img>image</image>
-				<div>
-					<h2 class="FeaturedProductsTxt">Product text</h2>
-					<h3 class="FeaturedProductsSubTxt">Sub text here</h3>
-					<button class="FeaturedProductsBtn">Learn More</button>
 				</div>
-			</div>
+				<div class="feelingLucky">
+					<div class="backgroundShade">
+					<h2 class="FeaturedProductsTxt">Feeling Lucky</h2>
+					<p class="FeaturedProductsSubTxt">The A5+ Wireless Speakers</p>
+					<button class="FeaturedProductsBtn">Learn More</button>
+					</div>
+				</div>
 		</section>
 
-		<section calss="OurStorySection">
+		<section class="OurStorySection">
 			<div class="OurStoryDiv">
 				<h2>Our story</h2>
-				<p>Audioengine was founded with a simple goal: Build products that sound great and inspire people to listen to music every day.</p>
+				<p>Audioengine was founded with a simple goal.</p>
+				<p id="italics">Build a speaker that sounds great, is easy to set up and use, and that makes people want to listen to music every day.</p>
 				<button>Learn More</button>
 			</div>
 		</section>
@@ -212,13 +211,28 @@
 		<section class="VideoSection">
 			<div>
 				<h2>This Is Audio Engine</h2>
-				<video width="320" height="240" controls>
-					<source src="yourvideofile.mp4" type="video/mp4">
-					<source src="yourvideofile.ogg" type="video/ogg">
-					Your browser does not support the video tag.
-			  	</video>
+				<img src="./images/bg-this-is-audio-engine-section.jpg" alt="man dancing to music">
+				<img src="./images/play.png" alt="orange play button" class="play-button button primary js-trigger-video-modal"/>
 			</div>
 		</section>
+				<section class="video-modal">
+					<div id="video-modal-content" class="video-modal-content">
+						<video controls 
+						width="100%" 
+						height="100%" 
+						id="youtube">
+							<source src="./media/this-is-audioengine.mp4" type="video/mp4" >
+							Your browser does not support the video tag. -->
+						</video>
+						<a href="#"	class="close-video-modal">
+							<!-- X close video icon -->
+							Close
+						</a>
+					</div>
+					    <!-- clickable overlay element -->
+    					<div class="overlay"></div>
+				</section>
+
 
 		<section class="SocialLinks">
 			<a id="TopButton">Top</a>
