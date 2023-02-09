@@ -3,10 +3,6 @@ $('.BannerSection').slick({
   infinite: true,
   fade: true,
   cssEase: 'linear',
-  prevArrow:
-    "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left'></i></button>",
-  nextArrow:
-    "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right'></i></button>",
 })
 
 $('.room-inner-carousel').slick({
@@ -14,10 +10,6 @@ $('.room-inner-carousel').slick({
   infinite: true,
   slidesToShow: 5,
   slidesToScroll: 2,
-  prevArrow:
-    "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left></i></button>",
-  nextArrow:
-    "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   responsive: [
     {
       breakpoint: 1300,
@@ -43,10 +35,6 @@ $('.InTheNewsItems').slick({
   infinite: true,
   slidesToShow: 5,
   slidesToScroll: 2,
-  prevArrow:
-    "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left></i></button>",
-  nextArrow:
-    "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   responsive: [
     {
       breakpoint: 1200,

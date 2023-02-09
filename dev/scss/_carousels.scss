@@ -9,6 +9,11 @@
   }
 }
 
+.slick-prev:before {
+  font-family: 'FontAwesome';
+  content: 'f104';
+}
+
 // Banner
 
 .BannerSection {
