@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Put Web Page Title Here...</title>
+	<title>AudioEngine</title>
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
 	<!-- Put Google Fonts Here -->
 	<style>
@@ -47,58 +47,65 @@
 			</ul>
 			</nav>
 	</header>
-
 	<main>
-		<section class="HeroBanner">
-			<div>
-				<img>image</image>
-				<div>
-					<h2 class="HeroBannerTxt">Banner Text</h2>
-					<h3 class="HeroBannerSubTxt">Sub Banner text here</h3>
+		<section class="BannerSection">
+			<div class="BannerItem">
+				<img src="images/banner-01-speaker-black.jpg" alt="Black speaker on a desk">
+				<div class="BannerText">
+					<h2 class="HeroBannerTitle">Spotify, Pandora</h2>
+					<div class="HeroBannerSubtitle">All your favourite music apps play instantly</div>
 					<button class="HeroBtn">Shop Wireless Speakers</button>
 				</div>
 			</div>
-			<div>
-				<img>image</image>
-				<div>
-					<h2 class="HeroBannerTxt">Banner Text</h2>
-					<h3 class="HeroBannerSubTxt">Sub Banner text here</h3>
-					<button class="HeroBtn">Shop Wireless Speakers</button>
+			<div class="BannerItem">
+				<img src="images/banner-02-bluetooth-receiver.jpg" alt="Bluetooth receiver">
+				<div class="BannerText">
+					<h2 class="HeroBannerTitle">Why is the B1 so impressive</h2>
+					<div class="HeroBannerSubtitle">See for yourself</div>
+					<button class="HeroBtn">Shop Bluetooth Speakers</button>
 				</div>
 			</div>
-			<div>
-				<img>image</image>
-				<div>
-					<h2 class="HeroBannerTxt">Banner Text</h2>
-					<h3 class="HeroBannerSubTxt">Sub Banner text here</h3>
-					<button class="HeroBtn">Shop Wireless Speakers</button>
+			<div class="BannerItem">
+				<img src="images/banner-03-speaker-brown.jpg" alt="Brown wooden speaker">
+				<div class="BannerText">
+					<h2 class="HeroBannerTitle">We've got you covered</h2>
+					<div class="HeroBannerSubtitle">Free shipping, no sales tax, 30 day trial and easy returns.</div>
+					<button class="HeroBtn">Shop AudioEngine</button>
 				</div>
 			</div>
-			<div>
-				<img>image</image>
-				<div>
-					<h2 class="HeroBannerTxt">Banner Text</h2>
-					<h3 class="HeroBannerSubTxt">Sub Banner text here</h3>
-					<button class="HeroBtn">Shop Wireless Speakers</button>
+			<div class="BannerItem">
+				<img src="images/banner-04-speaker-brown.jpg" alt="Brown wooden speaker">
+				<div class="BannerText">
+					<h2 class="HeroBannerTitle">We've got you covered</h2>
+					<div class="HeroBannerSubtitle">Free shipping, no sales tax, 30 day trial and easy returns.</div>
+					<button class="HeroBtn">Shop AudioEngine</button>
 				</div>
 			</div>
-			<div>
-				<img>image</image>
-				<div>
-					<h2 class="HeroBannerTxt">Banner Text</h2>
-					<h4 class="HeroBannerSubTxt">Sub Banner text here</h4>
-					<button class="HeroBtn">Shop Wireless Speakers</button>
+			<div class="BannerItem">
+				<img src="images/banner-05-speaker-red.jpg" alt="Red speaker">
+				<div class="BannerText">
+					<h2 class="HeroBannerTitle">We've got you covered</h2>
+					<div class="HeroBannerSubtitle">Free shipping, no sales tax, 30 day trial and easy returns.</div>
+					<button class="HeroBtn">Shop AudioEngine</button>
 				</div>
 			</div>
-			<div>
-				<img>image</image>
-				<div>
-					<h2 class="HeroBannerTxt">Banner Text</h2>
-					<h3 class="HeroBannerSubTxt">Sub Banner text here</h3>
-					<button class="HeroBtn">Shop Wireless Speakers</button>
+			<div class="BannerItem">
+				<img src="images/banner-06-speaker-black.jpg" alt="Black speaker">
+				<div class="BannerText">
+					<h2 class="HeroBannerTitle">We've got you covered</h2>
+					<div class="HeroBannerSubtitle">Free shipping, no sales tax, 30 day trial and easy returns.</div>
+					<button class="HeroBtn">Shop AudioEngine</button>
 				</div>
 			</div>
-		</section>
+			<div class="BannerItem">
+				<img src="images/banner-07-speaker-white.jpg" alt="White speaker">
+				<div class="BannerText">
+					<h2 class="HeroBannerTitle">Set up in seconds</h2>
+					<div class="HeroBannerSubtitle">No network setup, passwords to enter, or buttons to push.</div>
+					<button class="HeroBtn">Shop AudioEngine</button>
+				</div>
+			</div>
+		</section> <!-- end of HeroBanner -->
 
 		<section class="BestSellerSection">
 			<h2>Best Sellers</h2>
@@ -124,36 +131,52 @@
 				</article>
 			</div>
 		</section>
-
 		<section class="ShopByRoomSection">
 			<h2>Shop By Room or Device</h2>
-
-			<div class="ShopByRoomItems">
-			<div>
-				<h3>With Sonos</h3>
-			</div>
-			<div>
-				<h3>With Siri</h3>
-			</div>
-			<div>
-				<h3>With A Turntable</h3>
-			</div>
-			<div>
-				<h3>Tv Room</h3>
-			</div>
-			<div>
-				<h3>Kitchen</h3>
-			</div>
-			<div>
-				<h3>Patio</h3>
-			</div>
-			<div>
-				<h3>Office</h3>
-			</div>
-			<div>
-				<h3>Bedroom</h3>
-			</div>
-			</div> <!--/ end of ShopByRoomItems -->
+			<div class="carousel-wrapper">
+				<div class="room-inner-carousel">
+					<div class="room-item-wrapper">
+						<div class="ShopByRoomItem sonos">
+							<h3>With Sonos</h3>
+						</div>
+					</div>
+					<div class="room-item-wrapper">
+						<div class="ShopByRoomItem siri">
+							<h3>With Siri</h3>
+						</div>
+					</div>
+					<div class="room-item-wrapper">
+						<div class="ShopByRoomItem turntable">
+							<h3>With A Turntable</h3>
+						</div>
+					</div>		
+					<div class="room-item-wrapper">
+						<div class="ShopByRoomItem tv">
+							<h3>Tv Room</h3>
+						</div>
+					</div>
+					<div class="room-item-wrapper">
+						<div class="ShopByRoomItem kitchen">
+							<h3>Kitchen</h3>
+						</div>
+					</div>
+						<div class="room-item-wrapper">
+						<div class="ShopByRoomItem patio">
+							<h3>Patio</h3>
+						</div>
+					</div>
+						<div class="room-item-wrapper">
+						<div class="ShopByRoomItem office">
+							<h3>Office</h3>
+						</div>
+					</div>
+						<div class="room-item-wrapper">
+						<div class="ShopByRoomItem bedroom">
+							<h3>Bedroom</h3>
+						</div>
+					</div>
+				</div> <!--/ end of ShopByRoomItems -->
+			</div> <!-- end of carousel wrapper-->
 		</section>
 
 		<section class="FeaturedProductsSection">
@@ -184,12 +207,19 @@
 
 		<section class="InTheNewsSection">
 			<h2>In the news</h2>
-			<div class="IntheNewsItems">
-				<a href="#">Image1</a>
-				<a href="#">Image2</a>
-				<a href="#">Image3</a>
-				<a href="#">Image4</a>
-				<a href="#">Image5</a>
+			<div class="carousel-wrapper">
+				<div class="InTheNewsItems">
+					<a href="#"><img src="images/in-the-news-slider-01-rolling-stone.jpg" alt="Rolling Stone"></a>
+					<a href="#"><img src="images/in-the-news-slider-02-mens-health.jpg" alt="Men's Health"></a>
+					<a href="#"><img src="images/in-the-news-slider-03-forbes-life.jpg" alt="Forbes Life"></a>
+					<a href="#"><img src="images/in-the-news-slider-04-chicago-tribune.jpg" alt="Chicago Tribune"></a>
+					<a href="#"><img src="images/in-the-news-slider-05-gear-patrol.jpg" alt="Gear Patrol"></a>
+					<a href="#"><img src="images/in-the-news-slider-06-sound-guys.jpg" alt="Sound Guys"></a>
+					<a href="#"><img src="images/in-the-news-slider-07-wired.jpg" alt="Wired"></a>
+					<a href="#"><img src="images/in-the-news-slider-08-cnet.jpg" alt="C Net"></a>
+					<a href="#"><img src="images/in-the-news-slider-09-gq.jpg" alt="GQ"></a>
+					<a href="#"><img src="images/in-the-news-slider-10-pc-magazine.jpg" alt="PC Magazine"></a>
+				</div>
 			</div>
 		</section>
 

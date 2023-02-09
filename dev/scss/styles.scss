@@ -1,8 +1,11 @@
 @use "resets";
+@use 'slick';
+@use 'slick-theme';
 @use "variables" as *;
-@use "footer";
-@use "links";
 @use "header";
+@use "footer";
+@use 'carousels';
+@use "links";
 @use 'haley';
 @use "video";
 @use "bestSellers";
@@ -26,14 +29,13 @@ main {
     margin: 0 auto;
 }
 
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
 
-
-// footer {
-//     background-color: $footer-bgc;
-//     width: 100%;
-//     margin: 0 auto;
-// }
-
-// button {
-//     font-family: $font;
-// }
+h2 {
+  font-size: 2em;
+  font-weight: 300;
+}
