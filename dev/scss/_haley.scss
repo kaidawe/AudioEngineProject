@@ -64,14 +64,14 @@
     @media (min-width: 500px) {
         .allNew{
             background-image: url("../images/bg-all-new-section.jpg");
-            min-height: 70vh;
+            min-height: 600px;
             display: flex;
             align-items: center;
             position: relative;
         }
         .feelingLucky{
             background-image: url("../images/bg-feeling-lucky-section.jpg");
-            min-height: 70vh;
+            min-height: 600px;
             display: flex;
             align-items: center;
             position: relative;
@@ -97,8 +97,8 @@
         }
         .FeaturedProductsSubTxt{
           padding-left: 30px;
-          font-size: 20px;
-          padding-top: 15px;
+          font-size: 23px;
+          padding-top: 5px;
           padding-bottom: 15px;
         }
 
@@ -106,11 +106,11 @@
             min-height: 27vh;
 
             .FeaturedProductsBtn {
-              padding-left: 29px;
-              padding-right: 29px;
+              padding-left: 30px;
+              padding-right: 30px;
               margin-left: 30px;
               padding: 15px;
-              font-size: 19px;
+              font-size: 17px;
           }
         }
       }
@@ -118,13 +118,13 @@
       @media (min-width: 800px) {
         .allNew{
             background-image: url("../images/bg-all-new-section.jpg");
-            min-height: 70vh;
+            min-height: 620px;
             display: flex;
             align-items: center;
         }
         .feelingLucky{
             background-image: url("../images/bg-feeling-lucky-section.jpg");
-            min-height: 70vh;
+            min-height: 620px;
             display: flex;
             align-items: center;
         }
@@ -154,7 +154,7 @@
         }
 
         div {
-            min-height: 27vh;
+            min-height: 200px;
 
             .FeaturedProductsBtn {
               padding: 14px;
@@ -169,13 +169,11 @@
       @media (min-width: 1000px) {
         .allNew{
             background-image: url("../images/bg-all-new-section.jpg");
-            min-height: 70vh;
             display: flex;
             align-items: center;
         }
         .feelingLucky{
             background-image: url("../images/bg-feeling-lucky-section.jpg");
-            min-height: 70vh;
             display: flex;
             align-items: center;
         }
@@ -204,10 +202,6 @@
           padding-bottom: 15px;
         }
 
-        div {
-          min-height: 27vh;
-          overflow: hidden;
-        }
       }
 }
 
