@@ -1,0 +1,72 @@
+@use "variables" as *;
+
+.BestSellerSection {
+    margin: 1rem;
+    .BestSellerItemsArticle{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        img {
+            max-width: 9rem;
+        }
+        button {
+            background-color: $orange;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: .5rem;
+            margin-bottom: 1rem
+        }
+    }
+}
+
+@media (min-width: 345px) {
+    .BestSellerSection{
+        .BestSellerItemsArticle{
+            img{
+                max-width: 11rem;
+            }
+        }
+    }
+}
+@media (min-width: 390px) {
+    .BestSellerSection{
+        .BestSellerItemsArticle{
+            img{
+                max-width: 13rem;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 420px) {
+    .BestSellerSection{
+        h2 {
+            text-align: center;
+        }
+        .BestSellerItems{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            .BestSellerItemsArticle{
+                display: flex;
+                max-width: 30%;
+                flex-direction: column;
+                img {
+                    order: 1;
+                    max-width: 100%;
+                }
+                h3{
+                    order: 2;
+                    max-width: 80%;
+                    text-align: center;
+                }
+                button {
+                    order: 3;
+                }
+            }
+        }
+    }
+}

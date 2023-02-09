@@ -1,35 +1,32 @@
-@use 'resets';
+@use "resets";
 @use 'slick';
 @use 'slick-theme';
-@use 'variables' as *;
+@use "variables" as *;
+@use "header";
+@use "footer";
 @use 'carousels';
+@use "links";
+@use 'haley';
+@use "video";
+@use "bestSellers";
 
 // import fonts
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
+body {
+    background-color: $perimeter-bgc;
+}
+
 .wrapper {
-  max-width: 1410px;
-  margin: 0 auto;
-  background-color: $wrapper-bgc;
-  font-family: $font;
+    max-width: 1410px;
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: $font
 }
 
 main {
-  background-color: #fff;
-  width: 100%;
-  margin: 0 auto;
-}
-
-header {
-  background-color: black;
-  width: 100%;
-  margin: 0 auto;
-}
-
-footer {
-  background-color: $footer-bgc;
-  width: 100%;
-  margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
 h2,
@@ -42,7 +39,3 @@ h2 {
   font-size: 2em;
   font-weight: 300;
 }
-
-// button {
-//     font-family: $font;
-// }

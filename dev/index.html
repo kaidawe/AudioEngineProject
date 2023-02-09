@@ -10,6 +10,12 @@
 		@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 	</style>
 	<!-- end Google Fonts -->
+	<!-- *** IMPORTANT *** PUT LINKS TO FONT AWESOME HERE -->
+	<!-- Put Font Awesome Here -->
+	<link rel="stylesheet" href="./assets/font-awesome/css/fontawesome.css">
+	<link rel="stylesheet" href="./assets/font-awesome/css/solid.css">
+	<link rel="stylesheet" href="./assets/font-awesome/css/brands.css">
+	<!-- end Font Awesome -->
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 	<link rel="stylesheet" href="styles/styles.css?cachebuster=1">
 </head>
@@ -17,50 +23,29 @@
 
 <div class="wrapper">
 	<header>
-		<div>
-			<a href="">logo</a>
-
-			<nav id="main-nav">
-				<ul>
-				  <li>
-					<a href="#">Speakers</a>
-					<ul class="subnav">
-					  <li><a href="#">Features</a></li>
-					  <li><a href="#">Global</a></li>
-					  <li><a href="#">Science</a></li>
-					  <li><a href="#">Technology</a></li>
-					</ul>
-				  </li>
-				  <li>
-					<a href="#">Components</a>
-					<ul>
-						<li><a href="#">Features</a></li>
-						<li><a href="#">Global</a></li>
-						<li><a href="#">Science</a></li>
-						<li><a href="#">Technology</a></li>
-					</ul>
-				  </li>
-				  <li>
-					<a href="#">Deals</a>
-					<ul>
-						<li><a href="#">Features</a></li>
-						<li><a href="#">Global</a></li>
-						<li><a href="#">Science</a></li>
-						<li><a href="#">Technology</a></li>
-					</ul>
-				  </li>
-				  <li><a href="#">Explore</a></li>
-				  <li><a href="#">Suport</a></li>
-				  <li>
-					<ul>
-						<li><a href="#"><icon>location</icon></a></li>
-						<li><a href="#"></a><icon>Search</icon></li>
-						<li><a href="#"></a><icon>cart</icon></li>
-					</ul>
-				  </li>
+		<a href="#"><img src="./images/logo-audioengine.png" alt="Audio Engine logo"></a>
+		<button class="btn-burger" id="btn-burger">
+			<span class="btn-burger-content">
+				<span class="btn-burger-content-sr-only">Menu</span>
+				<span class="btn-burger-content-bar"></span>
+			</span><!-- end button-content -->
+		</button>
+		<nav id="main-nav">
+			<ul>
+				<li><a href="#">Speakers</a></li>
+				<li><a href="#">Components</a></li>
+				<li><a href="#">Deals</a></li>
+				<li><a href="#">Explore</a></li>
+				<li><a href="#">Support</a></li>
+				<li> <!--Icons-->
+				<ul class="nav-icons">
+					<li><a href="#"><i class="fa fa-solid fa-map-marker"></i></a></li>
+					<li><a href="#"><i class="fa fa-solid fa-search"></i></a></li>
+					<li><a href="#"><i class="fa fa-solid fa-shopping-cart"></i></a></li>
 				</ul>
-			  </nav>
-		</div>
+				</li> <!--end icons-->
+			</ul>
+			</nav>
 	</header>
 	<main>
 		<section class="BannerSection">
@@ -126,22 +111,25 @@
 			<h2>Best Sellers</h2>
 
 			<div class="BestSellerItems">
-			<div>
-				<h3>A2+ Desktop Speakers</h3>
-				<img>image red speaker</image>
-				<button>Shop Now</button>
+
+				<article class="BestSellerItemsArticle">
+					<h3>A2+ Desktop Speakers</h3>
+					<img src="./images/best-seller-01-speaker-red.jpg" alt="2 Red Speakers on an angle"/>
+					<button>Shop Now</button>
+				</article>
+
+				<article class="BestSellerItemsArticle">
+					<h3>B1 Bluetooth Music Recorder</h3>
+					<img src="./images/best-seller-02-bluetooth-receiver.jpg" alt="Bluetooth Music Reciever" />
+					<button>Shop Now</button>
+				</article>
+				
+				<article class="BestSellerItemsArticle">
+					<h3>A5+ Wireless Speakers</h3>
+					<img src="./images/best-seller-03-speaker-black.jpg" alt="Black Speakers" />
+					<button>Shop Now</button>
+				</article>
 			</div>
-			<div>
-				<h3>B1 Bluetooth Music Recorder</h3>
-				<img>image black box</image>
-				<button>Shop Now</button>
-			</div>
-			<div>
-				<h3>A5+ Wireless Speakers</h3>
-				<img>image black speakers</image>
-				<button>Shop Now</button>
-			</div>
-		</div>
 		</section>
 		<section class="ShopByRoomSection">
 			<h2>Shop By Room or Device</h2>
@@ -192,28 +180,27 @@
 		</section>
 
 		<section class="FeaturedProductsSection">
-			<div>
-				<img>image</image>
-				<div>
-					<h2 class="FeaturedProductsTxt">Product Text</h2>
-					<h3 class="FeaturedProductsSubTxt">Sub text here</h3>
+				<div class="allNew">
+				<div class="backgroundShade">
+					<h2 class="FeaturedProductsTxt">All New</h2>
+					<p class="FeaturedProductsSubTxt">The A5+ Wireless Speakers</p>
 					<button class="FeaturedProductsBtn">Learn More</button>
 				</div>
-			</div>
-			<div>
-				<img>image</image>
-				<div>
-					<h2 class="FeaturedProductsTxt">Product text</h2>
-					<h3 class="FeaturedProductsSubTxt">Sub text here</h3>
-					<button class="FeaturedProductsBtn">Learn More</button>
 				</div>
-			</div>
+				<div class="feelingLucky">
+					<div class="backgroundShade">
+					<h2 class="FeaturedProductsTxt">Feeling Lucky</h2>
+					<p class="FeaturedProductsSubTxt">The A5+ Wireless Speakers</p>
+					<button class="FeaturedProductsBtn">Learn More</button>
+					</div>
+				</div>
 		</section>
 
-		<section calss="OurStorySection">
+		<section class="OurStorySection">
 			<div class="OurStoryDiv">
 				<h2>Our story</h2>
-				<p>Audioengine was founded with a simple goal: Build products that sound great and inspire people to listen to music every day.</p>
+				<p>Audioengine was founded with a simple goal.</p>
+				<p id="italics">Build a speaker that sounds great, is easy to set up and use, and that makes people want to listen to music every day.</p>
 				<button>Learn More</button>
 			</div>
 		</section>
@@ -239,48 +226,64 @@
 		<section class="VideoSection">
 			<div>
 				<h2>This Is Audio Engine</h2>
-				<video width="320" height="240" controls>
-					<source src="yourvideofile.mp4" type="video/mp4">
-					<source src="yourvideofile.ogg" type="video/ogg">
-					Your browser does not support the video tag.
-			  	</video>
+				<img src="./images/bg-this-is-audio-engine-section.jpg" alt="man dancing to music">
+				<img src="./images/play.png" alt="orange play button" class="play-button button primary js-trigger-video-modal"/>
 			</div>
 		</section>
+				<section class="video-modal">
+					<div id="video-modal-content" class="video-modal-content">
+						<video controls 
+						width="100%" 
+						height="100%" 
+						id="youtube">
+							<source src="./media/this-is-audioengine.mp4" type="video/mp4" >
+							Your browser does not support the video tag. -->
+						</video>
+						<a href="#"	class="close-video-modal">
+							<!-- X close video icon -->
+							Close
+						</a>
+					</div>
+					    <!-- clickable overlay element -->
+    					<div class="overlay"></div>
+				</section>
+
 
 		<section class="SocialLinks">
-			<a id="TopButton">Top</a>
+			<a id="TopButton" href="#top"><i class="fa fa-solid fa-arrow-up"></i>Top</a>
 			<div class="EmailAndLinkContainer">
 				<div class="SocialLinksContainer">
-					<a href="#">Facebook</a>
-					<a href="#">Twitter</a>
-					<a href="#">Instagram</a>
-					<a href="#">Youtube</a>
+					<a href="#"><i class="fa fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-brands fa-pinterest"></i></a>
+					<a href="#"><i class="fa fa-brands fa-youtube"></i></a>
 				</div>
 				<div class="EmailContainer">
-					<icon>Envelope</icon>
-					<h3><a href="#">Email Sign Up</a></h3>
+					<a href="#"><i class="fa fa-envelope"></i>Email Sign Up</a>
 				</div>
 			</div>
 		</section>
 	</main>
 
 	<footer>
-		<a href="#">Speakers</a>
-		<a href="#">Components</a>
-		<a href="#">Refurbished</a>
-		<a href="#">Find A Store</a>
-		<a href="#">Support</a>
-		<a href="#">Explore</a>
-		<a href="#">About</a>
-		<a href="#">Contact</a>
-		<a href="#">Press</a>
-		<a href="#">Warranty</a>
-		<a href="#">Military</a>
-		<a href="#">Apps</a>
-		<a href="#">Privacy</a>
-		<a href="#">Terms</a>
-		<a href="#">Legal</a>
-		<a href="#">News</a>
+		<div class="FooterContainer">
+			<a href="#">Speakers</a>
+			<a href="#">Components</a>
+			<a href="#">Refurbished</a>
+			<a href="#">Find A Store</a>
+			<a href="#">Support</a>
+			<a href="#">Explore</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Press</a>
+			<a href="#">Warranty</a>
+			<a href="#">Military</a>
+			<a href="#">Apps</a>
+			<a href="#">Privacy</a>
+			<a href="#">Terms</a>
+			<a href="#">Legal</a>
+			<a href="#">News</a>
+		</div>
 	</footer>
 </div> <!--/ end of wrapper -->
 
