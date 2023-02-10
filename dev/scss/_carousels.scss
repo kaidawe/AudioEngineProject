@@ -18,14 +18,35 @@
 .BannerSection {
   @extend %banner;
   color: $grey;
-}
+  position: relative;
 
-.BannerShadebox {
-  @media (max-width: 680px) {
-    display: none !important;
+  .slick-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    z-index: 999;
+    left: 2%;
   }
-  @media (min-width: 680px) {
-    display: flex;
+
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-80%);
+    z-index: 999;
+    right: 2%;
+  }
+
+  .BannerShadebox {
+    .BannerBtn {
+      background-color: $orange;
+      color: white;
+    }
+    @media (max-width: 680px) {
+      display: none !important;
+    }
+    @media (min-width: 680px) {
+      display: flex;
+    }
   }
 }
 
