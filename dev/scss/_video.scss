@@ -12,9 +12,6 @@
     top: 35%;
     left: 45%;
     max-width: 4rem;
-    &:hover {
-      cursor: pointer;
-    }
   }
 }
 
@@ -26,6 +23,15 @@
   }
 }
 
+@media (min-width: 700px) {
+  .VideoSection {
+    h2 {
+      top: 11%;
+      left: 30%;
+      font-size: 2em;
+    }
+  }
+}
 @media (min-width: 900px) {
   .VideoSection {
     h2 {
@@ -92,7 +98,6 @@
     bottom: 0;
     left: 0;
     z-index: 0;
-
     background: rgba(0, 0, 0, 0.82); /* overlay color */
 
     opacity: 0;

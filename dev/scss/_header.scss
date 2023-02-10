@@ -1,13 +1,3 @@
-// enlarge height of nav bar at 350px, logo grows to fit
-// at 1000px, height of nav bar returns to mobile height
-// flow out menu at 1000px to just fit across the screen (icons get same room as one li)
-// as the screen gets bigger, the li's all stay the same size and shift right
-
-// burger menu top and bottom lines rotate from pivot on the right to form the x
-// opening menu pushes down the conent
-// li options listed vertically with all icons in one li
-// li hover grey background
-// icons hover orange
 @use "variables" as *; 
 
 @mixin btn-burger-bar {
@@ -17,7 +7,8 @@
     width: 100%;
     transition: all 0.3s ease-in-out;
 }
-  
+
+// accessibility class - visually hidden
 @mixin sr-only {
     position: absolute;
     width: 1px;
@@ -77,6 +68,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    // logo styling
     > a {
         display: flex;
         align-items: center;
@@ -86,6 +78,7 @@ header {
             max-height: 24px;
         }
     }
+    // nav dropdown styling
     nav {
         width: 100%;
         visibility: hidden;
@@ -111,10 +104,12 @@ header {
                     width: 100%;
                     height: 100%;
                 }
+                // icon row does not get grey background on hover
                 &:not(:nth-last-of-type(1)):hover {
                     background-color: rgba(125, 123, 123, 0.432);
                 }
             }
+            // icon row styling
             .nav-icons {
                 padding: 0;
                 li {
@@ -132,6 +127,7 @@ header {
         }
         @include flow-out-nav;
     }
+    // burger button styling
     .btn-burger {
         @include hide-btn-burger;
         margin: 0;
@@ -168,6 +164,7 @@ header {
             }
         }
     }
+    // transitions when burger button is clicked
     &.show {
         nav {
             visibility: visible;
