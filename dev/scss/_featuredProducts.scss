@@ -1,0 +1,47 @@
+@use 'variables' as *;
+@use 'resets';
+
+.FeaturedProductsSection {
+  @extend %banner;
+
+  .allNew {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../images/bg-all-new-section-phone-square.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .feelingLucky {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../images/bg-feeling-lucky-section-phone-square.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (min-width: 500px) {
+    .allNew {
+      background-image: url('../images/bg-all-new-section.jpg');
+    }
+    .feelingLucky {
+      background-image: url('../images/bg-feeling-lucky-section.jpg');
+    }
+  }
+
+  @media (min-width: 800px) {
+    .allNew {
+      background-image: url('../images/bg-all-new-section.jpg');
+    }
+    .feelingLucky {
+      background-image: url('../images/bg-feeling-lucky-section.jpg');
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .allNew {
+      background-image: url('../images/bg-all-new-section.jpg');
+    }
+    .feelingLucky {
+      background-image: url('../images/bg-feeling-lucky-section.jpg');
+    }
+  }
+}
