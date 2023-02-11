@@ -13,6 +13,9 @@
         font-weight: 600;
         text-transform: uppercase;
         color: $orange;
+        &:hover{
+            text-decoration: underline;
+        }
     }
     i {
         margin-right: 5px;
@@ -40,7 +43,10 @@
                 &:first-child i {
                     transform: translateX(-2px);
                 }
-
+                &:hover{
+                    box-shadow: 0 0 2px 2px $grey;
+                    text-decoration: none;
+                }
                 i {
                     margin: 0;
                 }                
