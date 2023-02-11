@@ -73,6 +73,9 @@ folders.fontsDev = `${folders.dev}/${folders.fonts}`;
 folders.fontsDist = `${folders.dist}/${folders.fonts}`;
 folders.webfontsDev = `${folders.dev}/${folders.webfonts}`;
 folders.webfontsDist = `${folders.dist}/${folders.webfonts}`;
+// Assets Folders
+folders.assetsDev = `${folders.dev}/assets`;
+folders.assetsDist = `${folders.dist}/assets`;
 
 // File Paths
 const files = {};
@@ -95,6 +98,8 @@ files.media = `${folders.mediaDev}/**/*`;
 // Fonts Files
 files.fonts = `${folders.fontsDev}/**/*`;
 files.webfonts = `${folders.webfontsDev}/**/*`;
+// Assets Files
+files.assets = `${folders.assetsDev}/**/*`;
 
 // Development Tasks
 
@@ -178,6 +183,11 @@ function fontsTask(done) {
   done();
 }
 
+function assestsTask(done) {
+  src(files.assets).pipe(dest(folders.assetsDist)); // Copies the assets files to the dist assets folder
+  done();
+}
+
 // Cachebust Task:
 // 1. Create a time stamp based on the current time
 // 2. Replaces any query strings in the HTML files that uses the time stamp with the new timp stamp
@@ -226,7 +236,7 @@ exports.build = series(
   setBuildState,
   cleanTask,
   parallel(sassBuildTask, jsBuildTask, jQueryTask),
-  parallel(imagesTask, mediaTask, fontsTask),
+  parallel(imagesTask, mediaTask, fontsTask, assestsTask),
   htmlTask,
   cacheBustTask
 );
